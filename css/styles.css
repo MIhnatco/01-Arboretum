@@ -1,0 +1,307 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* general */
+
+body {
+  font: 0.9rem/1.35rem sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  margin: 0
+}
+
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+
+}
+
+.container_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navig_only {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col3 {
+  width: 33.33%;
+  text-align: center;
+}
+
+ul {
+       list-style-type: none;
+       padding-left: 0;
+     }
+
+/* Typography */
+/*  Fonts
+    -----
+    font-family: 'Lora', serif;
+    font-family: 'Ubuntu', sans-serif;
+ */
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #124559;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .775em;
+  padding-top: .7em;
+  color: #124559;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+
+
+
+/* header */
+
+header {
+
+  background-color: #a7c957;
+  padding: 3em 0;
+}
+
+
+/* navigation */
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #124559;
+  font-weight: 700;
+  padding: .5em;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #fff;
+}
+
+.current_page {
+  border-bottom: 1px solid #124559;
+}
+
+.current_page:hover {
+  color: #707070;       /* if we are on current_page, it shouldn't look like a link */
+}
+
+
+/* main */
+
+main {
+          background: url("../images/autum.jpg") no-repeat center center;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+          text-shadow: 4px 3px 2px rgba(0,0,0,.7);
+
+      }
+
+    .arboretum,
+    .main_row,
+    .col h2 {
+      color: #fff;
+    }
+
+    .arboretum {
+      padding: 2em 0;
+      text-align: center;
+      font-size: 4em;
+    }
+
+
+    .main_row {
+      display: flex;
+      padding: 0 0 4em 0;
+    }
+/*
+    .col {
+      width: 33.33%;
+      text-align: center;
+
+    } */
+
+    .col3 h2 {
+      font-size: 2.5em;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 400;
+    }
+    .col3 p {
+      font-size: 1.3em;
+    }
+
+
+    /* pre-footer */
+    .pre-footer {
+      background-color: #EAE8E5 ;
+      color: #8C8B8A;
+      font-size: 1.1rem;
+    }
+
+
+    .events,
+    .gifts {
+        padding: 2em;
+    }
+
+      .events {
+        flex-basis: 380px;
+        flex-shrink: 0;
+      }
+
+      .gifts {
+        flex-grow: 1
+      }
+
+
+      .events a {
+        display: inline-block;
+        text-decoration: none;
+        color: #8C8B8A;
+        border-bottom: 1px solid #ccc;
+      	padding: .5em 0;
+      }
+
+      .events	a:hover	{
+        color:  #D88811;
+      }
+
+      .gifts p {
+        line-height: 1.3em;
+      }
+
+      .gifts a {
+        display: inline-block;
+        color: #D88811 ;
+        text-decoration: none;
+        padding-top: .5em;
+      }
+
+
+
+    /* footer */
+    footer {
+      background-color:  #a7c957;
+      padding: 3em 0;
+      color: #124559;
+    }
+
+    footer p {
+      font-weight: 400;
+      line-height: 1.3em;
+    }
+
+    footer a {
+      text-decoration: none;
+      padding: 0;
+      color: #124559;
+      display: inline-block;
+      font-weight: 400;
+      font-size: 1.3em;
+      line-height: 1.3em;
+    }
+
+    footer a:hover {
+      color: #D88811;
+      font-weight: 400;
+    }
+/* responsive code */
+
+@media screen and (max-width:1050px) {
+
+  /* header */
+  header {
+    text-align: center;
+  }
+
+  .subtitle {
+    padding-top: 2em;
+  }
+
+  .container_flex {
+    flex-direction: column;
+  }
+
+  .navig_only {
+    width: 60%;
+    margin: 0  auto;
+    justify-content: center;
+  }
+
+  nav ul {
+    margin-top: 2em;
+
+  }
+
+  nav li {
+    margin: .8em 0;
+  }
+
+
+  /* main */
+  .arboretum {
+    font-size: 3em;
+  }
+
+  .heading {
+    display: block;
+    padding-top: .8em;
+  }
+
+  .col3 {
+    width: 100%;
+    padding: 2em 0;
+
+  }
+
+  /* pre-footer */
+  .events,
+  .gifts {
+    text-align: center;
+
+  }
+
+  .events {
+    flex-basis: 0;
+    padding-bottom: 0;
+
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  .hidden {
+    display: none;
+  }
+}
