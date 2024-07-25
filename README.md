@@ -6,15 +6,15 @@ It should be a blog dedicated to exploring the world of trees, offering readers 
 and discuss various topics related to trees.
 
 # Features
-Responsive Design: Optimized for various screen sizes, ensuring a seamless experience on both desktop and mobile devices. 
-Engaging Content: Sections for reading stories, writing new content, and engaging in discussion with fellow tree enthusiasts.
-Event Listings: Stay updated with featured events. 
-Philanthropy: Information on how to support tree research, conservation and education through donations.
+- Responsive Design: Optimized for various screen sizes, ensuring a seamless experience on both desktop and mobile devices. 
+- Engaging Content: Sections for reading stories, writing new content, and engaging in discussion with fellow tree enthusiasts.
+- Event Listings: Stay updated with featured events. 
+- Philanthropy: Information on how to support tree research, conservation and education through donations.
 
 # Technologies used 
-HTML5: Structured content for the webpage.
-CSS3: Styling and layout. 
-Google Fonts: Typography with "Lora" and "Ubuntu" fonts.
+- HTML5: Structured content for the webpage.
+- CSS3: Styling and layout. 
+- Google Fonts: Typography with "Lora" and "Ubuntu" fonts.
 
 # Structure 
 Header 
